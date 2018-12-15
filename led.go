@@ -118,6 +118,7 @@ func basePort() {
 			time.Sleep(time.Duration(sleepSlice[i].dead) * time.Millisecond)
 		}
 	}
+	time.Sleep(300 * time.Millisecond)
 }
 
 // Sends current config from everloop.Led to device via given socket
