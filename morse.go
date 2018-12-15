@@ -1,15 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"os"
 	"strings"
 )
-
-func main() {
-	str := os.Args[1]
-	fmt.Println(encode(str))
-}
 
 func encode(msg string) (morseMsg string) {
 	morseMsg = ""
@@ -17,6 +10,7 @@ func encode(msg string) (morseMsg string) {
 		morseMsg += mapping[rune]
 		morseMsg += " "
 	}
+	morseMsg = morseMsg[:len(morseMsg)-1]
 	return
 }
 
