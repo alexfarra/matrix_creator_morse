@@ -22,3 +22,11 @@ For example:
 ```
 
 This will make the device light up with RGBW colors corresponding to each section of the IP address (i.e. `RRR.GGG.BBB.WWW`). The LEDs will also blink the IP address back as Morse code.
+
+Note:
+
+libsodium is also needed to compile:
+
+```
+sudo apt-get install libsodium-dev
+```
